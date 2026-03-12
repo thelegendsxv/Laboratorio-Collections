@@ -9,7 +9,7 @@ public class Ecommerce {
     LinkedList<Producto> listaProductos = new LinkedList<>();
     HashMap<Integer, Producto> mapaProductos = new HashMap<>();
 
-    TreeSet<Producto> ordenPrecio = new TreeSet<>(
+    public TreeSet<Producto> ordenPrecio = new TreeSet<>(
         (a,b) -> {
             int comparacion = Double.compare(a.precio, b.precio);
             if(comparacion == 0){

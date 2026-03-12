@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class Plataforma {
     LinkedList<Producto> listaProductos = new LinkedList<>();
     HashMap<Integer, Producto> mapaProducto = new HashMap<>();
-    TreeSet<Producto>ordenarProductoPrecio = new TreeSet<>((a,b) ->Double.compare(a.precio, b.precio));
+    public TreeSet<Producto>ordenarProductoPrecio = new TreeSet<>((a,b) ->Double.compare(a.precio, b.precio));
 
     //TreeSet<Producto> ordenar = new TreeSet<>((a,b) -> a.nombre.compareTo(b.nombre));   si fuera String(es de repaso)
 

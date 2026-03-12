@@ -4,15 +4,15 @@ import java.util.HashMap;
 
 public class Hospital {
 
-    ArrayList<Paciente> ordenLlegada = new ArrayList<>();
+    public ArrayList<Paciente> ordenLlegada = new ArrayList<>();
     HashMap<Integer, Paciente> mapaPacientes = new HashMap<>();
 
-    public Paciente registrarPacientes(int id, String nombre){
+    public Paciente registrarPacientes(int id, String nombre, String motivo, java.sql.Date fechaAgendada){
         if(mapaPacientes.containsKey(id)){
             return null;
         }
 
-        Paciente p = new Paciente(id, nombre);
+        Paciente p = new Paciente(id, nombre, motivo, fechaAgendada);
 
         ordenLlegada.add(p);
         mapaPacientes.put(id,p);
