@@ -1,5 +1,4 @@
 package escenario2;
-package escenario2;
 
 public class Main {
 
